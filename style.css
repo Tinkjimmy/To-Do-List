@@ -1,0 +1,83 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.todo-container {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#todo-input {
+    width: calc(100% - 90px); /* Adjusted to leave space for the 'Add' button */
+    padding: 10px;
+    margin-right: 10px; /* Add margin between input and button */
+    display: inline-block; /* Ensures inline display with button */
+}
+
+#add-todo-btn, .edit-btn {
+    width: 20%; /* Adjust width for uniformity */
+    padding: 10px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: inline-block; /* Aligns button next to input */
+}
+
+#add-todo-btn:hover, .edit-btn:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span {
+    flex-grow: 1; /* Allows the text span to fill the available space */
+    margin-right: 10px; /* Provides spacing between text and buttons */
+}
+
+.delete-btn {
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #ff6347; /* Tomato */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.delete-btn:hover {
+    background-color: #ff4500; /* OrangeRed */
+}
+
+.edit-btn {
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #1E90FF; /* DodgerBlue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.edit-btn:hover {
+    background-color: #1C86EE; /* Slightly darker blue */
+}
